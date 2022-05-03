@@ -1,0 +1,133 @@
+.team {
+    background-color: var(--background-color-gray);
+}
+
+.header2oc {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    margin-bottom: 47.65px;
+}
+
+.flex-our-com {
+    @include mq(tablet-only) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @include mq(desktop) {
+    display: flex;
+    align-items: center;
+    }
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-right: 30px;
+    background-color: #ffffff;
+
+    @include mq(mobile-only) {
+        margin-right: 0px;
+        margin-bottom: 30px;
+    
+    }
+    
+    @include mq(tablet-only) {
+        width: 354px;
+        margin-right: 0px;
+    
+    }
+
+    &:last-child {
+        margin-right: 0px;
+        @include mq(mobile-only) {
+            margin-bottom: 0px;
+        }
+    }
+    
+}
+
+
+
+.image-display {
+    display: block;
+}
+
+.description-spec {
+    padding: 30px;
+}
+
+.job-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-gray);
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+.flex-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-item {
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0px;
+}
+
+.social-item:hover .circle .icon-item,
+.social-item:focus .circle .icon-item {
+    fill: #ffffff;
+}
+
+.hero3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    margin-bottom: 9.49px;
+}
+
+.circle {
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--brand-color-blue);
+    }
+}
+
+
+.icon-item {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

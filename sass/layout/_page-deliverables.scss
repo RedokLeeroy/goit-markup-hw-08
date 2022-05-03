@@ -1,0 +1,48 @@
+.deliverables {
+    padding-top: 0px;
+
+    @include mq(mobile-only){
+        display: none;
+    }
+
+    @include mq(tablet) {
+        display: none;
+    }
+}
+
+.header2wwd {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.flex-wat-we-d {
+    display: flex;
+    align-items: center;
+}
+
+.what-we-do-item {
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+
+.image-desc {
+    position: relative;
+}
+
+.image-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}

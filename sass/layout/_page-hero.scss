@@ -1,0 +1,63 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: var(--background-color);
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/backgroung/backgound.jpg);
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero__main-statement {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 360px;
+  margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(desktop) {
+    font-size: 44px;
+    max-width: 696px;
+  }
+}
+
+.hero__main-statement--white {
+  color: var(--brand-color-white);
+}
+
+.main__button {
+  background-color: var(--brand-color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--brand-color-white);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
