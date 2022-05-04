@@ -80,10 +80,12 @@
             <nav class="menu__nav">
               <ul class="menu__nav-list">
                 <li class="menu__nav-item">
-                  <a class="menu__nav-link blue" href="">Студия</a>
+                  <a class="menu__nav-link" href="index.html">Студия</a>
                 </li>
                 <li class="menu__nav-item">
-                  <a class="menu__nav-link" href="">Портфолио</a>
+                  <a class="menu__nav-link blue" href="portfolio.html"
+                    >Портфолио</a
+                  >
                 </li>
                 <li class="menu__nav-item">
                   <a class="menu__nav-link" href="">Контакты</a>
@@ -152,13 +154,43 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    class="image-display"
-                    src="images/shop_block/img5.jpg"
-                    alt="Дизайн Технокряк"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img5.jpg        1x,
+                        images/shop_block/img@2x-5_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img5_md.jpg     1x,
+                        images/shop_block/img@2x-5_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img5_sm.jpg     1x,
+                        images/shop_block/img@2x-5_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="image-display"
+                      src="images/shop_block/box2.jpg"
+                      alt="Работа над дизайном"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -174,13 +206,42 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    class="image-display"
-                    src="images/shop_block/img6.jpg"
-                    alt="Постер дизайна"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img6.jpg        1x,
+                        images/shop_block/img@2x-6_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img6_md.jpg     1x,
+                        images/shop_block/img@2x-6_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img6_sm.jpg     1x,
+                        images/shop_block/img@2x-6_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="image-display"
+                      src="images/shop_block/img6.jpg"
+                      alt="Постер дизайна"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -198,13 +259,42 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    class="image-display"
-                    src="images/shop_block/img7.jpg"
-                    alt="Псотер ресторана"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img7.jpg        1x,
+                        images/shop_block/img@2x-7_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img7_md.jpg     1x,
+                        images/shop_block/img@2x-7_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img7_sm.jpg     1x,
+                        images/shop_block/img@2x-7_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="image-display"
+                      src="images/shop_block/img7.jpg"
+                      alt="Псотер ресторана"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -220,13 +310,42 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    class="image-display"
-                    src="images/shop_block/img8.jpg"
-                    alt="Наушники"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img8.jpg        1x,
+                        images/shop_block/img@2x-8_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img8_md.jpg     1x,
+                        images/shop_block/img@2x-8_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img8_sm.jpg     1x,
+                        images/shop_block/img@2x-8_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="image-display"
+                      src="images/shop_block/img8.jpg"
+                      alt="Наушники"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -242,13 +361,42 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    class="image-display"
-                    src="images/shop_block/img9.jpg"
-                    alt="Внешний вид боксов"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img9.jpg        1x,
+                        images/shop_block/img@2x-9_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img9_md.jpg     1x,
+                        images/shop_block/img@2x-9_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img9_sm.jpg     1x,
+                        images/shop_block/img@2x-9_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="image-display"
+                      src="images/shop_block/img9.jpg"
+                      alt="Внешний вид боксов"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -264,13 +412,42 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    class="image-display"
-                    src="images/shop_block/img10.jpg"
-                    alt="Дизайн Inspiration has no Borders"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img10.jpg        1x,
+                        images/shop_block/img@2x-10_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img10_md.jpg     1x,
+                        images/shop_block/img@2x-10_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img10_sm.jpg     1x,
+                        images/shop_block/img@2x-10_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="image-display"
+                      src="images/shop_block/img10.jpg"
+                      alt="Дизайн Inspiration has no Borders"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -286,13 +463,42 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    class="image-display"
-                    src="images/shop_block/img11.jpg"
-                    alt="Журнал I'am Limited Edition"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img11.jpg        1x,
+                        images/shop_block/img@2x-11_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img11_md.jpg     1x,
+                        images/shop_block/img@2x-11_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img11_sm.jpg     1x,
+                        images/shop_block/img@2x-11_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="image-display"
+                      src="images/shop_block/img11.jpg"
+                      alt="Журнал I'am Limited Edition"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -308,13 +514,42 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    class="image-display"
-                    src="images/shop_block/img12.jpg"
-                    alt="Лейбл Lab"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img12.jpg        1x,
+                        images/shop_block/img@2x-12_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img12_md.jpg     1x,
+                        images/shop_block/img@2x-12_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img12_sm.jpg     1x,
+                        images/shop_block/img@2x-12_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      class="image-display"
+                      src="images/shop_block/img12.jpg"
+                      alt="Лейбл Lab"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -330,12 +565,41 @@
             <li class="product-item">
               <a href="" class="product-link product-wrapper">
                 <div class="image-wrapper">
-                  <img
-                    src="images/shop_block/img13.jpg"
-                    alt="Дизайн Growing Business"
-                    width="370px"
-                    height="295"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        images/shop_block/img13.jpg        1x,
+                        images/shop_block/img@2x-13_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img13_md.jpg     1x,
+                        images/shop_block/img@2x-13_md.jpg 2x
+                      "
+                      media="(max-width: 768px)"
+                      type="image/jpeg"
+                    />
+
+                    <source
+                      srcset="
+                        images/shop_block/img13_sm.jpg     1x,
+                        images/shop_block/img@2x-13_sm.jpg 2x
+                      "
+                      media="(max-width:767 px)"
+                      type="image/jpeg"
+                    />
+
+                    <img
+                      src="images/shop_block/img13.jpg"
+                      alt="Дизайн Growing Business"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <p class="product-descr">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить

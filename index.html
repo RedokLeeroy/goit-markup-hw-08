@@ -80,10 +80,10 @@
             <nav class="menu__nav">
               <ul class="menu__nav-list">
                 <li class="menu__nav-item">
-                  <a class="menu__nav-link blue" href="">Студия</a>
+                  <a class="menu__nav-link blue" href="index.html">Студия</a>
                 </li>
                 <li class="menu__nav-item">
-                  <a class="menu__nav-link" href="">Портфолио</a>
+                  <a class="menu__nav-link" href="portfolio.html">Портфолио</a>
                 </li>
                 <li class="menu__nav-item">
                   <a class="menu__nav-link" href="">Контакты</a>
@@ -190,13 +190,21 @@
           <ul class="padding-hide flex-wat-we-d">
             <li class="what-we-do-item">
               <div class="image-desc">
-                <img
-                  class="image-display"
-                  src="images/hero/box1.jpg"
-                  alt="Рабочее место"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="images/hero/box1.jpg 1x, images/hero/img@2x1.jpg 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="image-display"
+                    src="images/hero/box1.jpg"
+                    alt="Рабочее место"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="image-display-desription">
                   <span class="image-description">десктопные приложения</span>
                 </div>
@@ -204,13 +212,24 @@
             </li>
             <li class="what-we-do-item">
               <div class="image-desc">
-                <img
-                  class="image-display"
-                  src="images/hero/box2.jpg"
-                  alt="Работа над дизайном"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/hero/box2.jpg     1x,
+                      images/hero/img@2x-1.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="image-display"
+                    src="images/hero/box2.jpg"
+                    alt="Работа над дизайном"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="image-display-desription">
                   <span class="image-description">мобильные приложения</span>
                 </div>
@@ -218,13 +237,24 @@
             </li>
             <li class="what-we-do-item">
               <div class="image-desc">
-                <img
-                  class="image-display"
-                  src="images/hero/box3.jpg"
-                  alt="Выбор цвета"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      images/hero/box3.jpg     1x,
+                      images/hero/img@2x-2.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="image-display"
+                    src="images/hero/box3.jpg"
+                    alt="Выбор цвета"
+                    width="370"
+                    height="294"
+                    loading="lazy"
+                  />
+                </picture>
                 <div class="image-display-desription">
                   <span class="image-description">дизайнерские решения</span>
                 </div>
@@ -239,13 +269,43 @@
           <h2 class="header2oc">Наша Команда</h2>
           <ul class="padding-hide flex-our-com">
             <li class="team-item">
-              <img
-                class="image-display"
-                src="images/team/img1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team/img1.jpg             1x,
+                    images/team/img_team@2x-1_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    images/team/img1_md.jpg          1x,
+                    images/team/img_team@2x-1_md.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    images/team/img1_sm.jpg          1x,
+                    images/team/img_team@2x-1_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="image-display"
+                  src="images/team/img1.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
               <div class="description-spec">
                 <h3 class="hero3">Игорь Демьяненко</h3>
                 <p class="job-position">Product Designer</p>
@@ -290,13 +350,41 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="image-display"
-                src="images/team/img2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team/img2.jpg             1x,
+                    images/team/img_team@2x-2_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    images/team/img2_md.jpg          1x,
+                    images/team/img_team@2x-2_md.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    images/team/img2_sm.jpg          1x,
+                    images/team/img_team@2x-2_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="image-display"
+                  src="images/team/img2.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="description-spec">
                 <h3 class="hero3">Ольга Репина</h3>
                 <p class="job-position">Frontend Developer</p>
@@ -341,13 +429,41 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="image-display"
-                src="images/team/img3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team/img3.jpg             1x,
+                    images/team/img_team@2x-3_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    images/team/img3_md.jpg          1x,
+                    images/team/img_team@2x-3_md.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    images/team/img3_sm.jpg          1x,
+                    images/team/img_team@2x-3_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="image-display"
+                  src="images/team/img3.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="description-spec">
                 <h3 class="hero3">Николай Тарасов</h3>
                 <p class="job-position">Marketing</p>
@@ -392,13 +508,41 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="image-display"
-                src="images/team/img4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    images/team/img4.jpg             1x,
+                    images/team/img_team@2x-4_lg.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    images/team/img4_md.jpg          1x,
+                    images/team/img_team@2x-4_md.jpg 2x
+                  "
+                  media="(max-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    images/team/img4_sm.jpg          1x,
+                    images/team/img_team@2x-4_sm.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="image-display"
+                  src="images/team/img4.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="description-spec">
                 <h3 class="hero3">Михаил Ермаков</h3>
                 <p class="job-position">UI Designer</p>
