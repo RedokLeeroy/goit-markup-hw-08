@@ -18,6 +18,13 @@
 .product-item {
   margin-bottom: 30px;
   @include mq(tablet) {
+    width: 354px;
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  @include mq(desktop) {
+    width: 370px;
     display: flex;
     margin-bottom: 0;
   }
