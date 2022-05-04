@@ -1,48 +1,43 @@
 .deliverables {
-    padding-top: 0px;
-
-    @include mq(mobile-only){
-        display: none;
-    }
-
-    @include mq(tablet) {
-        display: none;
-    }
+  padding-top: 0px;
+  display: none;
+  @include mq(desktop) {
+    display: block;
+  }
 }
 
 .header2wwd {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    margin: 0px;
-    margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px;
+  margin-bottom: 50px;
 }
 
 .flex-wat-we-d {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .what-we-do-item {
-    margin-right: 30px;
+  margin-right: 30px;
 
-    &:last-child {
-        margin-right: 0px;
-    }
+  &:last-child {
+    margin-right: 0px;
+  }
 }
 
-
 .image-desc {
-    position: relative;
+  position: relative;
 }
 
 .image-description {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
