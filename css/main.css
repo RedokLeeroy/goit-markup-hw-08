@@ -397,6 +397,7 @@ svg {
   transition-property: opacity, visibility;
   transition-duration: 350ms;
   transition-timing-function: linear;
+  z-index: 200;
 }
 
 .backdrop.is-open {
@@ -465,6 +466,12 @@ svg {
   padding: 40px;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 478.98px) {
+  .modal {
+    width: 365px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

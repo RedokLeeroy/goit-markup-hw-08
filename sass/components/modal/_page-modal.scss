@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
 
+  @include mq(mobile-only-small) {
+    width: 365px;
+  }
+
   @include mq(desktop) {
     width: 528px;
   }
