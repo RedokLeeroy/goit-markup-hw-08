@@ -132,6 +132,10 @@
   text-decoration: none;
   color: var(--brand-color-black);
 
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   @include mq(mobile-only-small) {
     font-size: 30px;
     line-height: 35px;
