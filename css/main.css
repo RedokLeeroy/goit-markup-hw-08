@@ -473,7 +473,8 @@ svg {
 
 @media screen and (max-width: 478.98px) {
   .modal {
-    width: 365px;
+    width: 100%;
+    max-width: 365px;
   }
 }
 

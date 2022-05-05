@@ -13,7 +13,8 @@
   flex-direction: column;
 
   @include mq(mobile-only-small) {
-    width: 365px;
+    width: 100%;
+    max-width: 365px;
   }
 
   @include mq(desktop) {
