@@ -5,6 +5,8 @@
   --brand-color-white: #ffffff;
   --background-color: #2f303a;
   --background-color-gray: #f5f4fa;
+  --item: 1;
+  --indent: 30px;
 }
 
 body {
@@ -317,6 +319,12 @@ svg {
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 478.98px) {
+  .menu__phone {
+    font-size: 24px;
+  }
+}
+
 .menu__mail {
   font-family: "Roboto";
   font-style: normal;
@@ -350,6 +358,13 @@ svg {
   letter-spacing: 0.02em;
   color: var(--brand-color-blue);
   margin-right: 10px;
+}
+
+@media screen and (max-width: 478.98px) {
+  .public-socials__link {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
 
 .public-socials__item {
@@ -687,6 +702,23 @@ svg {
   }
 }
 
+.clients-li {
+  --item: 2;
+  flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
+}
+
+@media screen and (min-width: 768px) {
+  .clients-li {
+    --item: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-li {
+    --item: 6;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients-li {
     margin-right: 30px;
@@ -698,7 +730,6 @@ svg {
 }
 
 .client-link {
-  width: 170px;
   height: 92px;
   border: 1px solid;
   border-color: #afb1b8;
@@ -710,24 +741,6 @@ svg {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (max-width: 767.98px) {
-  .client-link {
-    width: 210px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .client-link {
-    width: 226px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .client-link {
-    width: 170px;
-  }
 }
 
 .client-link:hover, .client-link:focus {

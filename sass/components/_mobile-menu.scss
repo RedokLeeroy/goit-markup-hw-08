@@ -150,6 +150,10 @@
   letter-spacing: 0.02em;
 
   margin-bottom: 32px;
+
+  @include mq(mobile-only-small) {
+    font-size: 24px;
+  }
 }
 
 .menu__mail {
@@ -190,6 +194,11 @@
   color: var(--brand-color-blue);
 
   margin-right: 10px;
+
+  @include mq(mobile-only-small) {
+    font-size: 12px;
+    line-height: 22px;
+  }
 }
 
 .public-socials__item {

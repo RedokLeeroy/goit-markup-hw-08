@@ -1,13 +1,15 @@
 :root {
-    --brand-color-black: #212121;
-    --brand-color-blue: #2196f3;
-    --brand-color-gray: #757575;
-    --brand-color-white: #ffffff;
-    --background-color: #2f303a;
-    --background-color-gray: #f5f4fa;
+  --brand-color-black: #212121;
+  --brand-color-blue: #2196f3;
+  --brand-color-gray: #757575;
+  --brand-color-white: #ffffff;
+  --background-color: #2f303a;
+  --background-color-gray: #f5f4fa;
+  --item: 1;
+  --indent: 30px;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: var(--brand-color-black);
+  font-family: "Roboto", sans-serif;
+  color: var(--brand-color-black);
 }
