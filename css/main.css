@@ -276,7 +276,7 @@ svg {
 }
 
 .menu__nav {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .menu__nav-list {
@@ -302,6 +302,13 @@ svg {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--brand-color-black);
+}
+
+@media screen and (max-width: 478.98px) {
+  .menu__nav-link {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 .menu__nav-link:hover, .menu__nav-link:focus {
@@ -1368,6 +1375,13 @@ svg {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: linear;
+}
+
+@media screen and (max-width: 478.98px) {
+  .product-descr {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .product-wrapper:hover .product-descr {
